@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@use 'foundation';
+
+body {
+	background-color: #426d49;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	margin: 30% auto;
+	text-align: center;
+}
+
+.links {
+	align-items: center;
+	display: grid;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.logo-no-text {
+	background: url('/assets/images/rumah-kue.png') #426d49 no-repeat;
+	height: 100px;
+	margin: 0 auto;
+	text-indent: -999999px;
+	width: 300px;
+}
+
+%button {
+	align-items: center;
+	border-radius: 5px;
+	display: inline-flex;
+	height: 46px;
+	justify-content: center;
+	margin-bottom: 15px;
+	width: 230px;
+}
+
+.button-tokopedia {
+	@extend %button;
+	background-color: #fff;
+	color: #3f8b3d;
+}
+
+.button-instagram {
+	@extend %button;
+	background-color: #fff;
+	color: #ed3c53;
+}
+
+.button-whatsapp {
+	@extend %button;
+	background-color: #3ea84f;
+	color: #fff;
+}
+
+%icon-contain {
+	background-size: contain;
+	height: 33px;
+	margin-right: 9px;
+	width: 33px;
+}
+
+.icon-whatsapp {
+	@extend %icon-contain;
+	background-image: url('/assets/images/whatsapp-icon.png');
+	
+}
+
+.icon-tokopedia {
+	@extend %icon-contain;
+	background-image: url('/assets/images/tokopedia-icon.png');
+
+}
+
+.icon-instagram {
+	@extend %icon-contain;
+	background-image: url('/assets/images/instagram-icon.png');
+
+}
+
